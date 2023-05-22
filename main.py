@@ -8,11 +8,10 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains import RetrievalQA
 
 def main():
-    os.environ['OPENAI_API_KEY'] = "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"
-#     load_dotenv()
+    load_dotenv()
     st.set_page_config(page_title="@armansu")
     st.header("Ask your question from @Armansu")
-#     os.getenv("OPENAI_API_KEY")
+    os.getenv("OPENAI_API_KEY")
     
     embeddings = OpenAIEmbeddings()
 
